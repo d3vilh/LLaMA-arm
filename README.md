@@ -55,9 +55,14 @@ Run the model:
 ```shell
 ./main -m ./models/7B/ggml-model-q4_0.bin -t 4 -n 128 -p "What is DSLU?"
 ```
+`-m` is to direct llama.cpp to the model you want it to use; 
+`-t` is the number of threads; 
+`-n` is the number of tokens to predict; 
+`-p` is your prompt.
+
 
 ### Interactive mode:
-If you want a more ChatGPT-like experience, you can run in interactive mode by passing -i as a parameter. In this mode, you can always interrupt generation by pressing `Ctrl+C` and enter one or more lines of text which will be converted into tokens and appended to the current context. You can also specify a reverse prompt with the parameter `-r "reverse prompt string"`. This will result in user input being prompted whenever the exact tokens of the reverse prompt string are encountered in the generation. A typical use is to use a prompt which makes LLaMa emulate a chat between multiple users, say Alice and Bob, and pass `-r "Philipp:"`.
+If you want a more ChatGPT-like experience, you can run in interactive mode by passing `-i` as a parameter. In this mode, you can always interrupt generation by pressing `Ctrl+C` and enter one or more lines of text which will be converted into tokens and appended to the current context. You can also specify a reverse prompt with the parameter `-r "reverse prompt string"`. This will result in user input being prompted whenever the exact tokens of the reverse prompt string are encountered in the generation. A typical use is to use a prompt which makes LLaMa emulate a chat between multiple users, say Alice and Bob, and pass `-r "Philipp:"`.
 
 
 Default arguments using default 7B model
