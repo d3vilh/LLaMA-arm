@@ -1,5 +1,5 @@
-# LLAMA-arm
-Run LLAMA model on ARM CPUs (Raspberry or Apple M)
+# LLaMA-arm
+Run LLaMA model on ARM CPUs (Raspberry or Apple M)
 
 Be aware that LlaMA doesn't have restrictive rules. It will, on occasion, be sexist, racist, homophobic, and very wrong.
 
