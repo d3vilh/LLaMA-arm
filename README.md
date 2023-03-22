@@ -1,6 +1,11 @@
 # LLaMA-arm
 Run [FB LLaMA](https://github.com/facebookresearch/llama/) model on ARM CPUs (Raspberry or Apple silicon)
 
+Meta (formerly known as Facebook) announced LLaMA in February 2023, a new language model boasting parameter ranges from 7 billion to 65 billion. LLaMA was trained using publicly available datasets and its code is open source, allowing for easy adaptation and use by anyone. The model's 'weights' or parameters were posted on the project's [GitHub page](https://github.com/facebookresearch/llama/) as torrents and [magnet links](https://github.com/facebookresearch/llama/pull/73).
+
+In March 2023, developer [Georgi Gerganov](https://github.com/ggerganov) released [llama.cpp](https://github.com/ggerganov/llama.cpp), a code that can run LLaMA on various hardware. The code operates locally, ensuring that no data is transmitted to Meta.
+
+
 Be aware that LlaMA doesn't have restrictive rules. It will, on occasion, be sexist, racist, homophobic, and very wrong.
 
 ### Installation
@@ -44,6 +49,7 @@ Convert model to proprietary Green AI gmml FP17 format (to be beneficial if you 
 ```shell
 python3 convert-pth-to-ggml.py ./models/7B/ 1
 ```
+> NOTE: this is extremely memory intensive step, uses at least 16GB RAM. It's also super slow and prone to failure.
 
 Quantize the model to 4 bits to reduce size (13GB to 4GB):
 ```shell
