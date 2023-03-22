@@ -3,7 +3,7 @@ Run LLaMA model on ARM CPUs (Raspberry or Apple M)
 
 Be aware that LlaMA doesn't have restrictive rules. It will, on occasion, be sexist, racist, homophobic, and very wrong.
 
-###Installation
+### Installation
 Clone C++ port of LLaMA FB model:
 ```shell
 git clone https://github.com/ggerganov/llama.cpp
