@@ -23,7 +23,7 @@ Install dependencies:
 python3 -m pip install torch numpy sentencepiece
 ```
 
-Upgrade numpy to latest version:
+Upgrade numpy to the latest version:
 ```shell
 pip install numpy --upgrade
 ```
@@ -38,6 +38,7 @@ Download LLaMA **7B model** into this directory following by this magnet link ([
 ```shell
 magnet:?xt=urn:btih:ZXXDAUWYLRUXXBHUYEMS6Q5CE5WA3LVA&dn=LLaMA
 ```
+> NOTE: Beaware that magnet above provides 7B, 13B, 30B and 65B models all togeather.
 
 Convert model to proprietary Green AI gmml FP17 format (to be beneficial if you are planning to deploy the model on low-power devices):
 ```shell
@@ -67,4 +68,3 @@ Custom arguments using 13B model
 ```shell
 ./main -m ./models/13B/ggml-model-q4_0.bin -n 256 --repeat_penalty 1.0 --color -i -r "Philipp:" -f prompts/chat-with-bob.txt
 ```
-
