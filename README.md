@@ -49,11 +49,14 @@ Convert model to proprietary Green AI gmml FP17 format (to be beneficial if you 
 ```shell
 python3 convert-pth-to-ggml.py ./models/7B/ 1
 ```
-> NOTE: this is extremely memory intensive step, uses at least 16GB RAM. It's also super slow and prone to failure.
+>NOTE1: dont forget to copy `tokenizer.model` file from the model directory to the `models` directory of the project.
+
+> NOTE2: this is extremely memory intensive step, uses at least 16GB RAM. It's also super slow and prone to failure.
 
 Quantize the model to 4 bits to reduce size (13GB to 4GB):
 ```shell
-./quantize.sh 7B
+chmod 755 quantize.py
+./quantize.py 7B
 ```
 
 ### Running the model
