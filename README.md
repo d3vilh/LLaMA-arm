@@ -1,5 +1,5 @@
 # LLaMA-arm
-Run [FB LLaMA](https://github.com/facebookresearch/llama/) model on ARM CPUs (Raspberry or Apple silicon)
+Run [FB LLaMA](https://github.com/facebookresearch/llama/) model on ARM CPUs (Raspberry or Apple silicon or even outdated x86 arch)
 
 Meta (formerly known as Facebook) announced LLaMA in February 2023, a new language model boasting parameter ranges from 7 billion to 65 billion. LLaMA was trained using publicly available datasets and its code is open source, allowing for easy adaptation and use by anyone. The model's 'weights' or parameters were posted on the project's [GitHub page](https://github.com/facebookresearch/llama/) as torrents and [magnet links](https://github.com/facebookresearch/llama/pull/73).
 
