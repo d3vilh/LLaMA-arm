@@ -39,7 +39,7 @@ Download LLaMA **7B model** into this directory following by this magnet link ([
 magnet:?xt=urn:btih:ZXXDAUWYLRUXXBHUYEMS6Q5CE5WA3LVA&dn=LLaMA
 ```
 
-Convert model to gmml FP17 format:
+Convert model to proprietary Green AI gmml FP17 format (to be beneficial if you are planning to deploy the model on low-power devices):
 ```shell
 python3 convert-pth-to-ggml.py ./models/7B/ 1
 ```
