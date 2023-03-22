@@ -28,7 +28,7 @@ Upgrade numpy to latest version:
 pip install numpy --upgrade
 ```
 
-Create direcroty structure for the 7B model:
+Create directory structure for the 7B model:
 ```shell
 mkdir -p ./models/7B
 cd ./models/7B
